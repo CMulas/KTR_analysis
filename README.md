@@ -4,7 +4,8 @@ Kinase Translocation Reporters (KTRs) are an effective method to quantify intrac
 
 And a list of all cells identified per image, with its associated properties (intensity, location, nearest neighbours, etc.): 
 
-/insert picture here of nice graph/
+![image](https://user-images.githubusercontent.com/46695970/121275710-db83dd80-c8ff-11eb-9b01-75433284d26c.png)
+
 /insert picture here of table/
 
 In this analysis example, samples were imaged using SiR-DNA and DHB-mVenus (KTR for CDK2 activity). Example images have been uploaded under the 'Example Data' folder.
