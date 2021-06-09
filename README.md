@@ -1,12 +1,11 @@
 # KTR_analysis
 
 Kinase Translocation Reporters (KTRs) are an effective method to quantify intracellular signalling pathways. When the protein of interest is phosphorylated, KTRs exit the nucleus to the cytoplasm- measuring the cytoplasmic to nuclear activity will be an indication of protein activity. This pipeline facilitates KTR image analysis by calculating the cytoplasmic-nuclear ratio for dividing cells in live-cell imaging videos. The final output is a measure of the cytoplasmic to nuclear ratio of a dividing cell tracked across time (as shown): 
-
-And a list of all cells identified per image, with its associated properties (intensity, location, nearest neighbours, etc.): 
-
 ![image](https://user-images.githubusercontent.com/46695970/121275710-db83dd80-c8ff-11eb-9b01-75433284d26c.png)
 
-/insert picture here of table/
+And a list of all cells identified per image, with its associated properties (intensity, location, nearest neighbours, etc.): 
+![image](https://user-images.githubusercontent.com/46695970/121278201-b5ad0780-c904-11eb-8460-20d8aff02e89.png)
+
 
 In this analysis example, samples were imaged using SiR-DNA and DHB-mVenus (KTR for CDK2 activity). Example images have been uploaded under the 'Example Data' folder.
 
