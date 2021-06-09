@@ -25,4 +25,4 @@ Using the Fiji software (downloadable [here](https://imagej.net/software/fiji/do
 In the CellPose software (downloadable [here](https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Cellpose_2D_ZeroCostDL4Mic.ipynb)), cell segmentation is conducted to isolate each individual cell as a 'cell object'. There are instructions to conduct cell segmentation in-built within the software. Details on the parameters used is uploaded under "2.CellPose_parameters.txt"
 
 ### Image Analysis Pipeline [Stage 3] 
-Using CellProfiler (downloadable [here] (https://cellprofiler.org/)), nuclear segmentation and object tracking will be conducted 
+Using CellProfiler (downloadable [here](https://cellprofiler.org/)), nuclear segmentation and object tracking will be conducted 
