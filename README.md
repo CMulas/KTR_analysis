@@ -7,7 +7,9 @@ And a list of all cells identified per image, with its associated properties (in
 ![image](https://user-images.githubusercontent.com/46695970/121278201-b5ad0780-c904-11eb-8460-20d8aff02e89.png)
 
 
-In this analysis example, samples were imaged using SiR-DNA and DHB-mVenus (KTR for CDK2 activity). Example images have been uploaded under the 'Example Data' folder.
+In this analysis example, samples were imaged using SiR-DNA and DHB-mVenus (KTR for CDK2 activity).In this github page, images from the two different channels will be denoted as 'SiR-DNA' and 'KTR' images for ease of explanation. 
+
+Example images have been uploaded under the 'Example Data' folder.
 
 ## Image Analysis Pipeline 
 
