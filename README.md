@@ -31,5 +31,3 @@ Using Rstudio (downloadable [here](https://www.rstudio.com/)), the cytoplasmic-n
 
 ## Optimization Parameters 
 The pipeline has been tested using different markers and imaging parameters (microscope, magnification). Tunable parameters which can be optimized per sample is listed in the "Optimization_Parameters.md". 
-
-
