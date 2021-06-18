@@ -11,7 +11,7 @@ In this analysis example, samples were imaged using SiR-DNA and DHB-mVenus (KTR 
 
 ## Image Analysis Pipeline 
 
-Different stages of the pipeline will segment cells in an image into the nucleus and the cytoplasm per cell, track and measure properties of each identified cell, and calcualte the cytoplasmic to nuclear ratio of dividing cells overtime. The pipeline consists of 4 stages as denoted below: 
+Different stages of the pipeline will segment cells in an image into the nucleus and the cytoplasm per cell, track and measure properties of each identified cell, and calculate the cytoplasmic to nuclear ratio of dividing cells overtime. The pipeline consists of 4 stages as denoted below: 
 1. Fiji: modify original image
 2. CellPose: generate cell segmentation
 3. CellProfiler: all downstream steps of data analysis (nuclear segmentation, measuring properties) 
