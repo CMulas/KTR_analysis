@@ -30,4 +30,4 @@ Using CellProfiler (downloadable [here](https://cellprofiler.org/)), nuclear seg
 Using Rstudio (downloadable [here](https://www.rstudio.com/)), the cytoplasmic-nuclear intensity ratio per successfully-tracked dividing cell is calculated with respect to the division time. The code used to do this calculation is uploaded under "4.R_CytotoNuRatio.R".
 
 ## Optimization Parameters 
-The pipeline has been tested using different markers and imaging parameters (microscope, magnification). Tunable parameters which can be optimized per sample is listed in the "Optimization_Parameters.md". 
+The pipeline has been tested using different markers and imaging parameters (microscope, magnification). Tunable parameters which can be optimized per sample is summarized in the "Optimization_Parameters.md". 
