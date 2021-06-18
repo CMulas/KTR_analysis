@@ -10,6 +10,7 @@ numFiles= lengthOf (fileList);
 
 setBatchMode(true);
 
+//run for loop which will optimize the brightness and contrast of images for further segmentation
 for (i=0;i<numFiles;i++){
 	file=fileList[i];
 	open(folder+"/"+file);
