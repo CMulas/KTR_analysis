@@ -26,7 +26,7 @@ In the CellPose software (downloadable [here](https://colab.research.google.com/
 ### Image Analysis Pipeline [Stage 3] 
 Using CellProfiler (downloadable [here](https://cellprofiler.org/)), nuclear segmentation, property measuremnet and object tracking will be conducted. The pipeline used for analysis is uploaded under "3.CellProfiler_pipeline.cpp". Instructions for each function or items to optimized ared denoted in the "3.CellProfiler_parameters.txt". 
 
-#### Image Analysis Pipeline [Stage 4] 
+### Image Analysis Pipeline [Stage 4] 
 Using Rstudio (downloadable [here](https://www.rstudio.com/)), the cytoplasmic-nuclear intensity ratio per successfully-tracked dividing cell is calculated with respect to the division time. The code used to do this calculation is uploaded under "4.R_CytotoNuRatio.R".
 
 ## Optimization Parameters 
