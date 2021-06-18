@@ -26,10 +26,10 @@ Using the Fiji software (downloadable [here](https://imagej.net/software/fiji/do
 The CellPose software (extension [here](https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Cellpose_2D_ZeroCostDL4Mic.ipynb)) colab version is an online, free-to-use method to generate cell segmentation. Cell segmentation is conducted to isolate each individual cell as a 'cell object'. There are instructions to conduct cell segmentation in-built within the software. Details on the parameters used is uploaded under "2.CellPose_parameters.md"
 
 ### Image Analysis Pipeline [Stage 3] 
-Using CellProfiler (downloadable [here](https://cellprofiler.org/)), nuclear segmentation, property measuremnet and object tracking will be conducted. The pipeline used for analysis is uploaded under "3.CellProfiler_pipeline.cpproj". Instructions for each function or items to optimized ared denoted in the "3.CellProfiler_parameters.md". 
+Using CellProfiler (downloadable [here](https://cellprofiler.org/)), nuclear segmentation, property measuremnet and object tracking will be conducted. The pipeline used for analysis is uploaded under "3.CellProfiler_pipeline.cpproj". Instructions for each function or items to optimized are denoted in the "3.CellProfiler_parameters.md". 
 
 ### Image Analysis Pipeline [Stage 4] 
-Using Rstudio (downloadable [here](https://www.rstudio.com/)), the cytoplasmic-nuclear intensity ratio per successfully-tracked dividing cell is calculated with respect to the division time. The code used to do this calculation is uploaded under "4.R_CytotoNuRatio.R".
+Using Rstudio (downloadable [here](https://www.rstudio.com/)), the cytoplasmic-nuclear intensity ratio per successfully-tracked dividing cell is calculated with respect to the division time. This will do the further analysis required from the excel spreadsheet shown above, to the final cytoplasmic-nuclear ratio over division time graph. The code used to do this calculation is uploaded under "4.R_CytotoNuRatio.R".
 
 ## Optimization Parameters 
 The pipeline has been tested using different markers and imaging parameters (microscope, magnification). Tunable parameters which can be optimized per sample is summarized in the "Optimization_Parameters.md". 
