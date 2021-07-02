@@ -35,3 +35,5 @@ In our experiment, we were interested in tracking the properties of dividing cel
 The pipeline has been tested using different markers and imaging parameters (microscope, magnification), consistently showing effective performance across different samples. 
 But alas, there are still some parameters that you will have to manually check and inspect before running the pipeline. The tunable parameters are mainly found in stage 2 and 3 of the pipeline, and have been elaborated separately in the corresponding markdown files. In addition, the identification of dividing cells from stage 3 to 4 of the pipeline is done manually. 
 
+## Acknowledgements 
+This project was formulated by Dr. Carla Mulas (Cambridge University), and was executed by Belle Sow (Stanford University). We thank Dr Kevin Chlaut and Dr Wolfram Pönisch for the constant guidance and advice on the CellPose software. We also thank the Stanford Vice-Provost for Undergraduate Education for graciously funding this project. 
