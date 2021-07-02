@@ -19,6 +19,20 @@ library(dplyr)
 library(tidyr)
 library(gdata)
 library(RColorBrewer)
+library (writexl)
+
+#convert data file (csv format) to excel sheet 
+Nucleus <- read.csv("MyExpt_Nucleus_2.csv")
+Cytoplasm <- read.csv("MyExpt_Cytoplasm.csv")
+  
+Nucleus<-as.data.frame(Nucleus)
+Cytoplasm<-as.data.frame(Cytoplasm)
+  
+  
+output_nu<- paste(pathway,'/MyExpt_Nucleus_2.xlsx',sep='')
+output_cyto<-paste(pathway,'/MyExpt_Cytoplasm.xlsx',sep='')
+write_xlsx(Nucleus, output_nu)
+write_xlsx(Cytoplasm, output_cyto)
 
 #import excel spread sheet
 Nucleus_intensity<-read_excel("MyExpt_Nucleus_2.xlsx")
