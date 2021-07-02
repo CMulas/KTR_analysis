@@ -1,15 +1,16 @@
 #Converting excel sheet to track 1 dividing cell's cytoplasmic to nuclear ratio over time. 
 
-#Step 1: With the visualization of object tracking images generated in CellProfiler, inspect the image to identify dividing cells with the corresponding labeled number on the image. 
-#Step 2: This program tracks the intensity of 1 dividing cell over time. 
+####Step 1 and 2####
+
+#With the visualization of object tracking images generated in CellProfiler, inspect the image to identify dividing cells with the corresponding labeled number on the image. 
+#This program tracks the intensity of 1 dividing cell over time. 
 
 v<-12 #labeled number on cell of interest. Change accordingly 
 N<-26 #I saved individual datasets in different folders that differed by a number; for ease of changing directory across different samples. 
 
 
-pathway<-paste("C:/Users/belle/OneDrive - NUS High School/Documents/College/Junior/Winter/Cambridge/Winter/CellCycleData/Segmentation_edited/Position",N,sep='')
+pathway<-paste("____________",N,sep='') #insert your input file directory here
 setwd(pathway)
-source("C:/Users/belle/OneDrive - NUS High School/Documents/College/Junior/Winter/Cambridge/Winter/Code_share-Belle/theme_publication.R")
 
 library(ggplot2)
 library(readxl)
@@ -32,7 +33,8 @@ colnames(ratio)<-c('ImageNumber','ObjectNumber','TrackObjectsLabel','Nuclear Int
 ratio$Ratio<-ratio$`Cytoplasmic Intensity`/ratio$`Nuclear Intensity`
 ratio_2<-subset.data.frame(ratio, ratio$TrackObjectsLabel==v)
 
-#Step 3:label cell trajectory for individual cell (output: dotplot_line)
+####Step 3#####
+#label cell trajectory for individual cell (output: dotplot_line)
 
 #when each cell divides, split them into 2 lineages, 0 for parent, 1 and 2 for daughter cell
 
@@ -74,8 +76,8 @@ dotplot_check<-ggplot(compiled_2,aes(x=ImageNumber, y=`Cytoplasm Area`,col=categ
 dotplot_check_line<-ggplot(compiled_2,aes(x=ImageNumber, y=`Cytoplasm Area`,col=as.factor(indexing)))+geom_line()+theme_bw()+xlab('Division Time')
 
 
-
-#Step 4:population-based data
+####Step 4####
+#population-based data
 
 #This section allows you to plot the total intensity of the cell population overtime to check for photobleaching of the sample (output:timelapse)
 #you can also plot the average nuclear-cytoplasmic ratio of all the cells in 1 image over time (output:timelapse_2)
@@ -122,7 +124,9 @@ sd_2<-c(total$'ratio sd')
 timelapse_2<-ggplot(data=total,
                     aes(x=total$z,y=total$'ratio mean'))+geom_point(color='red')+geom_errorbar(width=.1, aes(ymin=total$'ratio mean'-sd_2,ymax=total$'ratio mean'+sd_2))+geom_line(color='red')+theme_Publication()+labs(x='Frame no.',y='Intensity Ratio')
 
-#Step 5: outlier analysis
+####Step 5####
+#outlier analysis
+
 #if you are interested to see which cells create outlier ratio intensities, outliers and the corresponding object number has also been generated (output:dotplot_2)
 #generate dotplot
 df_dotplot<-data.frame(ratio$ImageNumber,ratio$TrackObjectsLabel, ratio$ratio)
@@ -135,7 +139,8 @@ outlier_type<-c(df_dotplot$outlier)
 
 dotplot_2<-ggplot(df_dotplot, aes(group=ImageNumber,x=ImageNumber,y=ratio,col=outlier))+geom_jitter(position=position_jitter(0.2))+theme_bw()+geom_text(data=subset(df_dotplot,outlier=='Yes'),aes(ImageNumber,ratio,label=TrackObjectsLabel),hjust=1,vjust=1,size=3,colour='black')
 
-#Step 6: export data from graphs into csv file. Un-comment the file if you want to export the data. 
+####Step 6#### 
+#export data from graphs into csv file. Un-comment the file if you want to export the data. Data will be exported into a folder named 'data'.
 # #export data
 #  output_2<-paste(pathway,'/data/','total.csv',sep='')
 #  write.csv(total,output_2)
