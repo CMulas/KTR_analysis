@@ -1,8 +1,8 @@
-//input folder containing original images 
-folder= "C:/Users/belle/OneDrive - NUS High School/Documents/College/Junior/Winter/Cambridge/Winter/CellCycleData/DHB-Venus_KTR_live-20210519T071242Z-001/DHB-Venus_KTR_live"
+//input folder containing original images. insert your input folder directory here 
+folder= "___________________" 
 
-//output folder for modified images  
-folder_2= "C:/Users/belle/OneDrive - NUS High School/Documents/College/Junior/Winter/Cambridge/Winter/CellCycleData/DHB-Venus_KTR_live-20210519T071242Z-001/edited"
+//output folder for modified images. insert your output folder directory here  
+folder_2= "___________________"
 
 // open file sequentially in folder
 fileList= getFileList(folder); 
